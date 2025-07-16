@@ -11,15 +11,15 @@
 </head>
 
 <body class="bg-black text-white">
-    <div class="flex w-full">
-        <div class="1st max-w-[40%] h-[100%] sticky top-0">
-            <div class="sidebar hidden md:block">
+    <div class="flex w-[100%]">
+        <div class="1st md:w-[40%] h-[100%] sticky top-0 flex justify-center">
+            <div class="sidebar ">
                 <ul class="flex justify-center flex-col space-y-1">
-                    <li>
+                    <li class="flex justify-center">
                         <a href="https://x.com/home?lang=en">
-                            <div class="logo invert rounded-full flex justify-center  hover:bg-neutral-800 w-fit p-2 ">
+                            <div class="logo invert rounded-full hover:bg-neutral-800 md:w-fit">
                                 <svg viewBox="0 0 24 24" aria-hidden="true"
-                                    class="flex justify-center mx-4 w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                                    class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
                                     <g>
                                         <path
                                             d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
@@ -29,12 +29,12 @@
                             </div>
                         </a>
                     </li>
-                    <li class="flex justify-start items-center p-2 px-3 gap-4 rounded-full w-fit hover:bg-neutral-800 ">
+                    <li class="flex justify-start items-center p-2 px-3 gap-4 rounded-full md:w-fit hover:bg-neutral-800 ">
                         <div class="flex flex-row text-2xl font-bold justify-center items-center">
                             <span class="material-symbols-outlined text-4xl px-2 ">
                                 home
                             </span>
-                            <span>Home</span>
+                            <span class=" hidden md:block">Home</span>
                         </div>
                     </li>
                     <li class="flex justify-start items-center p-2 px-3 gap-4 rounded-full w-fit hover:bg-neutral-800">
@@ -42,7 +42,7 @@
                             <span class="material-symbols-outlined text-4xl px-2">
                                 search
                             </span>
-                            <span>Explore</span>
+                            <span class=" hidden md:block">Explore</span>
                         </div>
                     </li>
                     <li class="flex justify-start items-center p-2 px-3 gap-4 rounded-full w-fit hover:bg-neutral-800">
@@ -50,7 +50,7 @@
                             <span class="material-symbols-outlined text-4xl px-2">
                                 notifications
                             </span>
-                            <span>Notifications</span>
+                            <span class=" hidden md:block">Notifications</span>
                         </div>
                     </li>
                     <li class="flex justify-start items-center p-2 px-3 gap-4 rounded-full w-fit hover:bg-neutral-800">
@@ -58,7 +58,7 @@
                             <span class="material-symbols-outlined text-4xl px-2">
                                 mail
                             </span>
-                            <span>Messages</span>
+                            <span class=" hidden md:block">Messages</span>
                         </div>
                     </li>
                     <li class="flex justify-start items-center p-2 px-3 gap-4 rounded-full w-fit hover:bg-neutral-800">
@@ -66,7 +66,7 @@
                             <span class="material-symbols-outlined text-4xl px-2">
                                 message
                             </span>
-                            <span>Grok</span>
+                            <span class=" hidden md:block">Grok</span>
                         </div>
                     </li>
                     <li class="flex justify-start items-center p-2 px-3 gap-4 rounded-full w-fit hover:bg-neutral-800">
@@ -74,7 +74,7 @@
                             <span class="material-symbols-outlined text-4xl px-2">
                                 group
                             </span>
-                            <span>Communities</span>
+                            <span class=" hidden md:block">Communities</span>
                         </div>
                     </li>
                     <li class="flex justify-start items-center p-2 px-3 gap-4 rounded-full w-fit hover:bg-neutral-800">
@@ -82,7 +82,7 @@
                             <span class="material-symbols-outlined text-4xl px-2">
                                 person
                             </span>
-                            <span>Profile</span>
+                            <span class=" hidden md:block">Profile</span>
                         </div>
                     </li>
                     <li class="flex justify-start items-center p-2 px-3 gap-4 rounded-full w-fit hover:bg-neutral-800">
@@ -90,7 +90,7 @@
                             <span class="material-symbols-outlined text-4xl px-2">
                                 pending
                             </span>
-                            <span>More</span>
+                            <span class=" hidden md:block">More</span>
                         </div>
                     </li>
                     <li class="justify-center text-xl font-bold items-center p-2 px-3 w-full rounded-full bg-white md:bg-transparent text-black md:text-inherit hidden md:block ">
@@ -100,7 +100,7 @@
 
             </div>
         </div>
-        <div class="2nd w-full border-x-white border-1 border-y-0">
+        <div class="2nd w-full md:w-full border-x-white border-1 border-y-0">
             <div class="flex">
                 <div class="flex justify-center w-1/2 font-bold text-xl p-3 hover:bg-neutral-800">For You</div>
                 <div class="flex justify-center w-1/2 font-bold text-xl p-3 hover:bg-neutral-800">Following</div>
@@ -111,13 +111,13 @@
                 </div>
             </div>
             <hr>
-            <div class="whats flex justify-start items-start gap-2 ">
+            <div class="whats flex justify-start items-start gap-2 md:gap-0">
                 <div class="photo">
-                    <img class="w-[10%] h-12 rounded-full m-2 mr-0"
+                    <img class="w-20 h-12 rounded-full m-2 mr-0"
                         src="https://pbs.twimg.com/profile_images/1682983230990090240/bhmrZYQO_400x400.jpg"
                         alt="Profile">
                 </div>
-                <div class="input mt-2 w-[84%]">
+                <div class="input mt-2 md:w-[70%]">
                     <input class="outline-none text-xl w-full flex flex-col overflow-x" type="text"
                         placeholder="What's happening?">
                     <div class="flex items-center w-fit text-blue-500 text-sm p-1 rounded-full hover:bg-neutral-800">
@@ -127,7 +127,7 @@
                         <div>Everyone can reply</div>
                     </div>
                     <hr class="w-[100%]">
-                    <div class="flex justify-between">
+                    <div class="flex justify-between w-full">
                         <div class="icon flex gap-0">
                             <span
                                 class="material-symbols-outlined text-xl px-2 cursor-pointer text-blue-500 rounded-full hover:bg-neutral-800 p-2 mx-0 my-3">
@@ -159,7 +159,7 @@
                             </span>
                         </div>
                         <div class="hidden md:block items-center justify-center text-xl font-bold p-2 mr-2 my-2 px-3 w-fit rounded-full cursor-pointer bg-white text-black md:text-inherit">
-                            <span class="flex justify-center items-center">Post</span>
+                            <span class="flex justify-end items-center">Post</span>
                         </div>
                     </div>
                 </div>
@@ -200,7 +200,7 @@
                                 <span class="material-symbols-outlined text-xl">book</span>
                             </div>
                             <div
-                                class="icon flex items-center rounded-full p-1 hover:text-blue-500 cursor-pointer hover:bg-neutral-800">
+                                class="icon hidden md:block items-center rounded-full p-1 hover:text-blue-500 cursor-pointer hover:bg-neutral-800">
                                 <span class="material-symbols-outlined text-xl">upload</span>
                             </div>
                             
@@ -241,7 +241,7 @@
                                 <span class="material-symbols-outlined text-xl">book</span>
                             </div>
                             <div
-                                class="icon flex items-center rounded-full p-1 hover:text-blue-500 cursor-pointer hover:bg-neutral-800">
+                                class="icon hidden md:block items-center rounded-full p-1 hover:text-blue-500 cursor-pointer hover:bg-neutral-800">
                                 <span class="material-symbols-outlined text-xl">upload</span>
                             </div>
                         </div>
@@ -285,7 +285,7 @@
                                 <span class="material-symbols-outlined text-xl">book</span>
                             </div>
                             <div
-                                class="icon flex items-center rounded-full p-1 hover:text-blue-500 cursor-pointer hover:bg-neutral-800">
+                                class="icon hidden md:block items-center rounded-full p-1 hover:text-blue-500 cursor-pointer hover:bg-neutral-800">
                                 <span class="material-symbols-outlined text-xl">upload</span>
                             </div>
                         </div>
@@ -326,7 +326,7 @@
                                 <span class="material-symbols-outlined text-xl">book</span>
                             </div>
                             <div
-                                class="icon flex items-center rounded-full p-1 hover:text-blue-500 cursor-pointer hover:bg-neutral-800">
+                                class="icon hidden md:block items-center rounded-full p-1 hover:text-blue-500 cursor-pointer hover:bg-neutral-800">
                                 <span class="material-symbols-outlined text-xl">upload</span>
                             </div>
                         </div>
